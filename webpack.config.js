@@ -21,8 +21,15 @@ const config = {
                     ]
                 }
             }]
+        },{
+            test: /\.scss$/,
+            use: [
+                'style-loader',
+                'css-loader',
+                'sass-loader'
+            ]
         }]
     }
 }
 
-module.exports = config
+module.exports = config;
